@@ -45,17 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const isoLang = getBrowserLang()
   const useLang = convertBrowserLang(isoLang.toLocaleLowerCase())
   const values = translations[useLang];
-    document.getElementsByClassName('chat__prompt-message-copy')[0].textContent = values['greetingTitle'];
-    document.getElementsByClassName('chat__prompt-base-helper')[0].textContent = values['baseMessage'];
-    document.getElementsByClassName('chat__prompt-input')[0].textContent = values['Check'];
-    document.getElementsByClassName('chat__all-btn')[0].textContent = values['newChat'];
-    document.getElementsByClassName('chat__all-messages-track')[0].textContent = values['noChat'];
-    document.getElementsByClassName('mb-2')[0].textContent = values['formTitle'];
-    document.getElementsByClassName('chat__messages-btn')[0].textContent = values['startChat'];
-    document.getElementsByName('name')[0].textContent = values['name'];
-    document.getElementsByName('email')[0].textContent = values['email'];
-    document.getElementsByName('Issue')[0].textContent = values['issue'];
-    document.getElementsByName('message')[0].textContent = values['message'];
+    document.getElementsByClassName('chat__prompt-message-copy')[0].replaceChildren(values['greetingTitle']);
+    document.getElementsByClassName('chat__prompt-base-helper')[0].replaceChildren(values['baseMessage']);
+    document.getElementsByClassName('chat__prompt-input')[0].replaceChildren(values['Check']);
+    document.getElementsByClassName('chat__all-btn')[0].replaceChildren(values['newChat']);
+    document.getElementsByClassName('chat__all-messages-track')[0].replaceChildren(values['noChat']);
+    document.getElementsByClassName('mb-2')[0].replaceChildren(values['formTitle']);
+    document.getElementsByClassName('chat__messages-btn')[0].replaceChildren(values['startChat']);
+    document.getElementsByName('name')[0].replaceChildren(values['name']);
+    document.getElementsByName('email')[0].replaceChildren(values['email']);
+    document.getElementsByName('Issue')[0].replaceChildren(values['issue']);
+    document.getElementsByName('message')[0].replaceChildren(values['message']);
 });
 
 document.addEventListener('DOMContentLoaded', setButtonLink);
