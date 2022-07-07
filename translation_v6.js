@@ -44,7 +44,7 @@ const translations = {
 document.addEventListener("DOMContentLoaded", function () {
   const isoLang = getBrowserLang()
   const useLang = convertBrowserLang(isoLang.toLocaleLowerCase())
-  const translationKeys = translations[useLang];
+  const values = translations[useLang];
     document.getElementsByClassName('chat__prompt-message-copy')[0].textContent = values['greetingTitle'];
     document.getElementsByClassName('chat__prompt-base-helper')[0].textContent = values['baseMessage'];
     document.getElementsByClassName('chat__prompt-input')[0].textContent = values['Check'];
