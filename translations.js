@@ -10,11 +10,10 @@ function convertBrowserLang(iso) {
 }
 const translations = {
   en: {
-    //linguagem default no painel
   },
   pt: {
     greetingTitle: 'Assistente Kyte',
-    baseMessage: 'Olá! Se precisar é só chamar 👋',
+    baseMessage: 'Olá Se precisar é só chamar 👋',
     Check: 'user name',
     previousChat: 'Conversas anteriores',
     noChat: 'Sem conversas anteriores',
@@ -27,14 +26,14 @@ const translations = {
     message: 'Sua mensagem: quanto mais detalhado e direto ao ponto, melhor e mais rápido poderemos te ajudar',
   },
   es: {
-    greetingTitle: 'Asistente Kyte,
+    greetingTitle: 'Asistente Kyte',
     baseMessage: '¡Hola! Si lo necesitas solo llama 👋',
     Check: 'user name',
     previousChat: 'Conversaciones anteriores',
     noChat: 'Sin conversaciones previas',
     newChat: 'Nueva conversación',
     startChat: 'Iniciar conversación',
-    formTitle: 'Cuéntanos tu duda, comentario o problema.,
+    formTitle: 'Cuéntanos tu duda, comentario o problema.',
     name: 'Mi nombre',
     email: 'Correo electrónico',
     issue: 'Necesito ayuda con...',
